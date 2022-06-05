@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Gastos</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="cuentas.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container p-3 text-center bg-info">
+            <h1>App de Gastos</h1>
+            <h3>Cargá los gastos que hizo cada uno</h3>
+        </div>
+    </header>
+    <section>
+        <div class="container p-3 text-center bg-info bg-opacity-50">
+            <input type="text" id="nombre" placeholder="Nombre" class="border border-dark rounded bg-info bg-opacity-50">
+            <input type="number" id="gasto" placeholder="Gasto" class="border border-dark rounded bg-info bg-opacity-50"> <br><br>
+            <button onclick="Guardar(nombre, gasto)" class="btn btn-info btn-outline-dark"
+            style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;">Guardar</button> <br><br>
+            <!--
+            <button onclick="Eliminar()" class="btn btn-info btn-outline-dark float-right"
+            style="--bs-btn-padding-y: .10rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: 1rem;">Eliminar Uno</button>
+            -->
+            <ul class="list-group list-group-horizontal row row-cols-1 row-cols-sm-3 row-cols-lg-4" id="datos">    
+            </ul>
+        </div>
+        <div class="container p-3 text-center bg-info bg-opacity-25">
+            <h4 id="total"></h4>
+            <h4 id="costo"></h4> <br>
+            <ul class="list-group" id="diferencia">    
+            </ul>
+        </div>
+        <script src="cuentas.js"></script>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="cuentas.js"></script>
+</body>
+</html>
